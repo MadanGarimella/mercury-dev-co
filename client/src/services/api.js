@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://mercury-dev-co-1.onrender.com",
+baseURL: "https://mercury-dev-co-1.onrender.com/api",
 });
 
 export const sendContact = (data) => API.post("/contact", data);
